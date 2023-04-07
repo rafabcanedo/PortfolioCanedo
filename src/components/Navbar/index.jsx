@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTheme } from '../../hooks/useTheme';
-import Logo from "../Logo";
+import Logo from "../Design/Logo";
 
 import { X, List, Moon, Sun } from '@phosphor-icons/react';
 
@@ -10,7 +10,7 @@ function Navbar() {
  const { theme, setTheme } = useTheme();
 
  return(
-  <div className="w-full fixed top-0 left-0">
+   <div className="w-full fixed top-0 left-0">
    <div className="md:flex items-center justify-between bg-navbar py-4 md:px-10 px-7">
    <div>
    <Logo />
@@ -20,7 +20,7 @@ function Navbar() {
     onClick={() => setOpen(!open)}
     className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
    >
-    {open ? <X /> : <List />}
+    {open ? <X className="dark:text-white" /> : <List className="dark:text-white" />}
    </div>
 
     <ul
@@ -61,6 +61,8 @@ function Navbar() {
      Linkedin
     </button>
     </div>
+
+    
    </div>
   </div>
  )

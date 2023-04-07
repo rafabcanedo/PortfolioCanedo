@@ -1,7 +1,9 @@
+import Title from "../../components/Design/Title";
+
 function About() {
  return(
   <div>
-   <h1>About</h1>
+   <Title />
   </div>
  )
 }

@@ -1,5 +1,6 @@
 import Logo from '../../assets/Avatar.png';
-import { InstagramLogo, LinkedinLogo, TwitchLogo, TwitterLogo } from '@phosphor-icons/react';
+import { InstagramLogo, LinkedinLogo, TwitchLogo, GithubLogo } from '@phosphor-icons/react';
+import Button from '../../components/Button';
 
 function Home() {
  return(
@@ -18,24 +19,22 @@ function Home() {
    </div>
 
    <div className="flex flex-row gap-4 mb-6">
-   <a href="https://www.linkedin.com/in/rafael-canedo-4abaa8197/" className="cursor-pointer hover:text-primary">
+   <a href="https://www.linkedin.com/in/rafael-canedo-4abaa8197/" className="cursor-pointer hover:text-primary dark:text-white dark:hover:text-primary">
    <LinkedinLogo size={28} />
    </a>
-   <a href="https://www.instagram.com/canedodev/" target="_blank" className="cursor-pointer hover:text-primary">
+   <a href="https://www.instagram.com/canedodev/" target="_blank" className="cursor-pointer hover:text-primary dark:text-white dark:hover:text-primary">
    <InstagramLogo size={28} />
    </a>
-   <a href="https://www.twitch.tv/canedopriv" target="_blank" className="cursor-pointer hover:text-primary">
+   <a href="https://www.twitch.tv/canedopriv" target="_blank" className="cursor-pointer hover:text-primary dark:text-white dark:hover:text-primary">
    <TwitchLogo size={28} />
    </a>
-   <a href="https://twitter.com/canedopriv" target="_blank" className="cursor-pointer hover:text-primary">
-   <TwitterLogo size={28} />
+   <a href="https://github.com/rafabcanedo" target="_blank" className="cursor-pointer hover:text-primary dark:text-white dark:hover:text-primary">
+   <GithubLogo size={28} />
    </a>
    </div>
    
 
-   <button className="relative border-2 font-medium border-primary bg-transparent py-2 px-2 rounded-lg text-primary transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-lef before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100">
-    Know More
-   </button>
+   <Button title="Know More" />
    
    </div>
  )

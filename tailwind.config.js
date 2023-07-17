@@ -1,20 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: "class",
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  darkMode: "class",
+  darkMode: 'class',
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
   theme: {
     colors: {
-     'white': '#FFFFFF',
-     'black': '#000000',
-     'white':'#fff',
-     'dark': '#202020',
+      white: '#FFFFFF',
+      black: '#000000',
+      // eslint-disable-next-line no-dupe-keys
+      white: '#fff',
+      dark: '#202020',
 
-     'subtitle': '#c3c3c3',
-     'primary': '#ffc93c',
+      subtitle: '#c3c3c3',
+      primary: '#ffc93c',
     },
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
@@ -24,4 +22,3 @@ export default {
   },
   plugins: [],
 }
-

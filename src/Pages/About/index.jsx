@@ -1,11 +1,9 @@
-import Title from "../../components/Design/Title";
+import Title from '../../components/Design/Title'
 
-function About() {
- return(
-  <div>
-   <Title />
-  </div>
- )
+export default function About() {
+  return (
+    <div className="min-h-screen">
+      <Title title="About" />
+    </div>
+  )
 }
-
-export default About;

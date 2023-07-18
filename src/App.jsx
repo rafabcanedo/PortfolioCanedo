@@ -1,10 +1,12 @@
 import React from 'react'
 
-import Home from './Pages/Home'
 import Navbar from './components/Navbar'
+import Home from './Pages/Home'
 import About from './Pages/About'
-import Footer from './components/Footer'
+import Projects from './Pages/Projects'
+import Experience from './Pages/Experience'
 import Contact from './Pages/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Projects />
+      <Experience />
       <Contact />
       <Footer />
     </>

@@ -11,7 +11,7 @@ export default function Contact() {
     <div className="min-h-screen">
       <Title title="Contact" />
 
-      <div className="flex flex-row items-center justify-center gap-12">
+      <div className="flex flex-row items-center justify-center h-screen gap-12">
         <div className="flex flex-col items-center justify-center cursor-pointer">
           <div>
             <a

@@ -25,10 +25,11 @@ export default function About() {
         <div className='dark:text-subtitle items-center'>
         <Title title="About Me" />
          <span className='font-sans text-base'>
-          Sou um desenvolvedor criativo. Desenho e desenvolvo meus projetos<br />
-          Gosto muito desse workflow. Ando estudando e praticando todos os dias,<br />
-          codando meu mundo.
-          Hoje trabalho com desenvolvimento Web e Mobile com React Native
+          I'm a creative developer. Draw and coding all my projects.<br />
+          I like this workflow. Always i'm studying and coding different projects<br />
+          coding my life every day.
+          Today i'm work with<br /> Web Development (React and Typescript) and <br />
+          Mobile Development (React Native and Typescript)
          </span>
 
          <div>

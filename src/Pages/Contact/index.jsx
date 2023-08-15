@@ -8,7 +8,7 @@ import {
 
 export default function Contact() {
   return (
-    <div className="w-full h-screen">
+    <div id="contact" className="w-full h-screen">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="flex flex-col items-center justify-center">
           <Title title="Contact" />

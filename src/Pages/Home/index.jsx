@@ -9,7 +9,7 @@ import Button from '../../components/Button'
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center mt-12 h-screen">
+    <div id="home" className="flex flex-col items-center justify-center mt-12 h-screen">
       <img
         src={Logo}
         alt="Logo CanedoDev"

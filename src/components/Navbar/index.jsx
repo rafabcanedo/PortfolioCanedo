@@ -7,6 +7,19 @@ import { X, List, Moon, Sun } from '@phosphor-icons/react'
 function Navbar() {
   const [open, setOpen] = useState(false)
   const { theme, setTheme } = useTheme()
+  const [click, setClick] = useState(false)
+
+  const scrollTo = (id) => {
+   let element = document.getElementById(id)
+
+   element.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+    inline: 'nearest'
+   })
+
+   setClick(!click);
+  }
 
   return (
     <div className="w-full fixed top-0 left-0">
@@ -33,17 +46,35 @@ function Navbar() {
               : 'top-[-490px] md:opacity-100 opacity-0'
           }`}
         >
-          <li className="text-lg font-inter dark:text-white font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7">
-            <a href="#">Home</a>
+          <li 
+           className="text-lg font-inter dark:text-white font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+           onClick={() => scrollTo('home')}
+          >
+            Home
           </li>
-          <li className="text-lg font-inter dark:text-white font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7">
-            <a href="#">About</a>
+          <li 
+           className="text-lg font-inter dark:text-white font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+           onClick={() => scrollTo('about')}
+          >
+            About
           </li>
-          <li className="text-lg font-inter dark:text-white font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7">
-            <a href="#">Projects</a>
+          <li 
+           className="text-lg font-inter dark:text-white font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+           onClick={() => scrollTo('projects')} 
+          >
+            Projects
           </li>
-          <li className="text-lg font-inter dark:text-white font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7">
-            <a href="#">Contact</a>
+          <li 
+           className="text-lg font-inter dark:text-white font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+           onClick={() => scrollTo('experience')} 
+          >
+            Experience
+          </li>
+          <li 
+           className="text-lg font-inter dark:text-white font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+           onClick={() => scrollTo('contact')}
+          >
+           Contact
           </li>
         </ul>
 

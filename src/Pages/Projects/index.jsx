@@ -3,10 +3,10 @@ import { ProjectsCard } from '../../components/ProjectsCard'
 
 export default function Projects() {
   return (
-    <div className="min-h-screen">
+    <div id="projects" className="min-h-screen">
       <Title title="Projects" />
 
-      <div>
+      <div className='flex items-center justify-center'>
        <ProjectsCard />
       </div>
     </div>

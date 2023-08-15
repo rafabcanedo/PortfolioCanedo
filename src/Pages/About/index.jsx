@@ -7,7 +7,7 @@ import { AiFillCaretRight } from "react-icons/ai";
 export default function About() {
   const phoneRef = useRef()
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div id="about" className="min-h-screen flex items-center justify-center">
       <div className="text-center space-y-4">
         {/*<Title title="About Me" />*/}
         <div className='flex flex-row items-center'>

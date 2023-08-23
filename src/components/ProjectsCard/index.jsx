@@ -1,4 +1,4 @@
-// import Ignitecall from '../../assets/ignite.png'
+import Agenda from '../../assets/ignitecall.png'
 import Blog from '../../assets/blog1.png'
 import Canecocup from '../../assets/canecocup.png'
 import Feedback from '../../assets/feedback.jpg'
@@ -10,9 +10,9 @@ import Nlwspace from '../../assets/nlwspace.png'
 export function ProjectsCard() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 mt-24 gap-12 sm:px-0">
-      {/* <div className="relative cursor-pointer hover:opacity-40 w-[400px]">
+      <div className="relative cursor-pointer hover:opacity-40 w-[400px]">
         <img
-          src={Ignitecall}
+          src={Agenda}
           alt="Image Project"
           width={600}
           height={600}
@@ -23,10 +23,10 @@ export function ProjectsCard() {
             Ignite Call
           </span>
           <p className="text-lg font-sans translate-y-5 transition-transform">
-            NextJs | Storybook
+            NextJs | Prisma
           </p>
         </div>
-  </div> */}
+      </div>
 
       <div className="relative cursor-pointer hover:opacity-40 w-[400px]">
         <img
@@ -126,7 +126,7 @@ export function ProjectsCard() {
           height={600}
           className="block w-full"
         />
-        <div className="absolute top-0 left-0 w-full h-full text-white flex flex-col font-sans items-center justify-center opacity-0 hover:opacity-100 transition-opacity hover:translate-y-0">
+        <div className="absolute top-0 left-0 w-full h-full text-dark flex flex-col font-sans items-center justify-center opacity-0 hover:opacity-100 transition-opacity hover:translate-y-0">
           <span className="text-2xl font-sans translate-y-5 transition-transform">
             Ignite Call
           </span>

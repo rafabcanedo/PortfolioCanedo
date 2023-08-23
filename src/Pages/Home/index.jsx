@@ -6,10 +6,28 @@ import {
   GithubLogo,
 } from '@phosphor-icons/react'
 import Button from '../../components/Button'
+import { useState } from 'react'
 
 export default function Home() {
+  const [click, setClick] = useState(false)
+
+  const scrollTo = (id) => {
+    const element = document.getElementById(id)
+
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    })
+
+    setClick(!click)
+  }
+
   return (
-    <div id="home" className="flex flex-col items-center justify-center mt-12 h-screen">
+    <div
+      id="home"
+      className="flex flex-col items-center justify-center mt-12 h-screen"
+    >
       <img
         src={Logo}
         alt="Logo CanedoDev"
@@ -66,7 +84,11 @@ export default function Home() {
         </a>
       </div>
 
-      <Button title="Know More" />
+      <div>
+        <a onClick={() => scrollTo('projects')}>
+        <Button title="Know More" />
+        </a>
+      </div>
     </div>
   )
 }

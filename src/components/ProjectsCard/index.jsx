@@ -1,4 +1,4 @@
-import Ignitecall from '../../assets/ignite.png'
+// import Ignitecall from '../../assets/ignite.png'
 import Blog from '../../assets/blog1.png'
 import Canecocup from '../../assets/canecocup.png'
 import Feedback from '../../assets/feedback.jpg'
@@ -10,7 +10,7 @@ import Nlwspace from '../../assets/nlwspace.png'
 export function ProjectsCard() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 mt-24 gap-12 sm:px-0">
-      <div className="relative cursor-pointer hover:opacity-40 w-[400px]">
+      {/* <div className="relative cursor-pointer hover:opacity-40 w-[400px]">
         <img
           src={Ignitecall}
           alt="Image Project"
@@ -26,7 +26,7 @@ export function ProjectsCard() {
             NextJs | Storybook
           </p>
         </div>
-      </div>
+  </div> */}
 
       <div className="relative cursor-pointer hover:opacity-40 w-[400px]">
         <img

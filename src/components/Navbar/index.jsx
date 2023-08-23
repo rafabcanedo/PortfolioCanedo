@@ -23,7 +23,7 @@ function Navbar() {
 
   return (
     <div className="w-full fixed top-0 left-0">
-      <div className="md:flex items-center justify-between bg-navbar py-4 md:px-10 px-7">
+      <div className="md:flex items-center justify-between bg-nuv dark:bg-nav py-4 md:px-10 px-7">
         <div>
           <Logo />
         </div>
@@ -40,7 +40,7 @@ function Navbar() {
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-navbar md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-nuv dark:bg-nav md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
             open
               ? 'top-20 opacity-100'
               : 'top-[-490px] md:opacity-100 opacity-0'
@@ -76,35 +76,35 @@ function Navbar() {
           >
             Contact
           </li>
-        </ul>
 
-        <div className="flex flex-row items-center gap-2">
-          {theme === 'light' ? (
-            <Moon
-              size={25}
-              className="cursor-pointer"
-              onClick={() => setTheme('dark')}
-            />
-          ) : (
-            <Sun
-              size={25}
-              className="cursor-pointer text-white"
-              onClick={() => setTheme('light')}
-            />
-          )}
+          <div className="flex flex-row items-center gap-2">
+            {theme === 'light' ? (
+              <Moon
+                size={25}
+                className="cursor-pointer"
+                onClick={() => setTheme('dark')}
+              />
+            ) : (
+              <Sun
+                size={25}
+                className="cursor-pointer text-white"
+                onClick={() => setTheme('light')}
+              />
+            )}
 
-          <div>
-            <button className="relative border-2 font-medium border-primary bg-transparent py-2 px-2 rounded-lg text-primary transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-lef before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100">
-              <a
-                href="https://www.linkedin.com/in/rafael-canedo-4abaa8197/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Linkedin
-              </a>
-            </button>
+            <div>
+              <button className="relative border-2 font-medium border-primary bg-transparent py-2 px-2 rounded-lg text-primary transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-lef before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100">
+                <a
+                  href="https://www.linkedin.com/in/rafael-canedo-4abaa8197/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Linkedin
+                </a>
+              </button>
+            </div>
           </div>
-        </div>
+        </ul>
       </div>
     </div>
   )

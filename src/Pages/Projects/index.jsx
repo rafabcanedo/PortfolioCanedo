@@ -6,8 +6,8 @@ export default function Projects() {
     <div id="projects" className="min-h-screen">
       <Title title="Projects" />
 
-      <div className='flex items-center justify-center'>
-       <ProjectsCard />
+      <div className="flex items-center justify-center">
+        <ProjectsCard />
       </div>
     </div>
   )

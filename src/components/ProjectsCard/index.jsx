@@ -1,4 +1,4 @@
-import Ignitecall from '../../assets/ignitecall.png'
+import Ignitecall from '../../assets/ignite.png'
 import Blog from '../../assets/blog1.png'
 import Canecocup from '../../assets/canecocup.png'
 import Feedback from '../../assets/feedback.jpg'

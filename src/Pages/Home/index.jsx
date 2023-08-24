@@ -43,7 +43,7 @@ export default function Home() {
 
         <div className="flex flex-col mb-8">
           <span className="font-semibold font-sans text-lg dark:text-white">
-            I'm Front End Developer
+            I'm a Front End Developer
           </span>
           <p className="font-medium text-sm text-subtitle">
             Web Developer and coding my life
@@ -92,5 +92,3 @@ export default function Home() {
     </div>
   )
 }
-
-// className="flex-1 flex items-center justify-center h-full"

@@ -27,7 +27,7 @@ export default function About() {
             <span className="font-sans text-base">
               I'm a creative developer. Draw and coding all my projects.
               <br />
-              I like this workflow. Always i'm studying and coding different
+              I like this workflow. I'm always studying and coding different
               projects
               <br />
               coding my life every day. Today i'm work with

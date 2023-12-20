@@ -10,15 +10,10 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <Experience />
-      <Contact />
-      <Footer />
-    </>
+    <div className="flex flex-col justify-center items-center h-screen">
+      <h1 className="text-white font-sans text-3xl">Loading...</h1>
+      <span className="text-white font-cursive text-xl">CanedoDev</span>
+    </div>
   )
 }
 

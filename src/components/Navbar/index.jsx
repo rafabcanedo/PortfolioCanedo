@@ -5,26 +5,12 @@ import Logo from '../Design/Logo'
 import { X, List, Moon, Sun } from '@phosphor-icons/react'
 import { Link } from 'react-router-dom'
 
-function Navbar() {
+export default function Navbar() {
   const [open, setOpen] = useState(false)
   const { theme, setTheme } = useTheme()
-  const [click, setClick] = useState(false)
-
-  const scrollTo = (id) => {
-    const element = document.getElementById(id)
-
-    element.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest',
-    })
-
-    setClick(!click)
-    setOpen(!open)
-  }
 
   return (
-    <div className="w-full fixed top-0 left-0 z-10 px-36">
+    <div className="w-full fixed top-0 left-0 z-10 md:px-36">
       <div className="md:flex items-center justify-between bg-nuv dark:bg-nav py-4 md:px-10 px-7">
         <div>
           <Logo />
@@ -94,5 +80,3 @@ function Navbar() {
     </div>
   )
 }
-
-export default Navbar

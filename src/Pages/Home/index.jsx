@@ -7,12 +7,16 @@ import {
   GithubLogo,
 } from '@phosphor-icons/react'
 import ProjectsHome from '../../components/ProjectsCard/ProjectsHome/ProjectsHome'
+import { Feedbacks } from '../../components/Feedbacks/Feedbacks'
 
 export default function Home() {
   return (
     <div className="mt-16 h-screen px-36">
-      <div className="flex flex-row justify-between items-center">
-        <div id="home" className="flex flex-row items-center justify-start">
+      <div className="flex flex-col md:flex-row justify-between items-center">
+        <div
+          id="home"
+          className="flex flex-col md:flex-row items-center justify-start"
+        >
           <img
             src={Logo}
             alt="Logo CanedoDev"
@@ -44,7 +48,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-row gap-4 mb-6">
+      <div className="flex flex-col md:flex-row gap-4 mb-6">
         <a
           href="https://www.linkedin.com/in/rafael-canedo-4abaa8197/"
           target="_blank"
@@ -112,7 +116,10 @@ export default function Home() {
         </div>
       </div>
 
-      <ProjectsHome />
+      <div className="flex flex-col md:flex-row justify-between">
+        <ProjectsHome />
+        <Feedbacks />
+      </div>
     </div>
   )
 }

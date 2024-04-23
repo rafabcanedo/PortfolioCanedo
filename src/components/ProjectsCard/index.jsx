@@ -6,6 +6,8 @@ import Jandrade from '../../assets/jorgeandrade.png'
 import Andromeda from '../../assets/andromeda.png'
 import Ignitedt from '../../assets/ignitedt.png'
 import Nlwspace from '../../assets/nlwspace.png'
+import NlwExpert from '../../assets/nlw-expert.png'
+import NlwUnite from '../../assets/nlw-unite.png'
 
 export function ProjectsCard() {
   return (
@@ -132,6 +134,42 @@ export function ProjectsCard() {
           </span>
           <p className="text-lg font-sans translate-y-5 transition-transform">
             NextJs | Context
+          </p>
+        </div>
+      </div>
+
+      <div className="relative cursor-pointer hover:opacity-40 w-[400px]">
+        <img
+          src={NlwExpert}
+          alt="Image Project"
+          width={600}
+          height={600}
+          className="block w-full"
+        />
+        <div className="absolute top-0 left-0 w-full h-full text-white flex flex-col font-sans items-center justify-center opacity-0 hover:opacity-100 transition-opacity hover:translate-y-0">
+          <span className="text-2xl font-sans translate-y-5 transition-transform">
+            Nlw Expert
+          </span>
+          <p className="text-lg font-sans translate-y-5 transition-transform">
+            React Native | Zustand
+          </p>
+        </div>
+      </div>
+
+      <div className="relative cursor-pointer hover:opacity-40 w-[400px]">
+        <img
+          src={NlwUnite}
+          alt="Image Project"
+          width={600}
+          height={600}
+          className="block w-full"
+        />
+        <div className="absolute top-0 left-0 w-full h-full text-white flex flex-col font-sans items-center justify-center opacity-0 hover:opacity-100 transition-opacity hover:translate-y-0">
+          <span className="text-2xl font-sans translate-y-5 transition-transform">
+            Nlw Space
+          </span>
+          <p className="text-lg font-sans translate-y-5 transition-transform">
+            React | React Native | Typescript
           </p>
         </div>
       </div>

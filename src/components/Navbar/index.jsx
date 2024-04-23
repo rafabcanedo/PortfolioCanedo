@@ -9,6 +9,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
   const { theme, setTheme } = useTheme()
 
+  const closeMenu = () => {
+    setOpen(false)
+  }
+
   return (
     <div className="w-full fixed top-0 left-0 z-10 md:px-36">
       <div className="md:flex items-center justify-between bg-nuv dark:bg-nav py-4 md:px-10 px-7">
@@ -35,27 +39,42 @@ export default function Navbar() {
           }`}
         >
           <Link to="/">
-            <li className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer">
+            <li
+              className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+              onClick={closeMenu}
+            >
               Home
             </li>
           </Link>
           <Link to="/about">
-            <li className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer">
+            <li
+              className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+              onClick={closeMenu}
+            >
               About
             </li>
           </Link>
           <Link to="/projects">
-            <li className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer">
+            <li
+              className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+              onClick={closeMenu}
+            >
               Projects
             </li>
           </Link>
           <Link to="/blog">
-            <li className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer">
+            <li
+              className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+              onClick={closeMenu}
+            >
               Blog
             </li>
           </Link>
           <Link to="/contact">
-            <li className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer">
+            <li
+              className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+              onClick={closeMenu}
+            >
               Contact
             </li>
           </Link>

@@ -11,8 +11,8 @@ import { Feedbacks } from '../../components/Feedbacks/Feedbacks'
 
 export default function Home() {
   return (
-    <div className="mt-16 h-screen px-36">
-      <div className="flex flex-col md:flex-row justify-between items-center">
+    <div className="px-24">
+      <div className="flex flex-col mt-16 md:flex-row justify-between items-center">
         <div
           id="home"
           className="flex flex-col md:flex-row items-center justify-start"
@@ -40,7 +40,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-end px-14">
+        <div className="flex md:justify-end justify-end px-14">
           <Link to="/about">
             <button className="flex items-center justify-center relative border-2 font-medium border-primary bg-transparent py-2 px-2 rounded-lg text-primary transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-lef before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100">
               Know More
@@ -48,7 +48,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row gap-4 mb-6">
+      <div className="flex flex-col md:flex-row gap-4 mb-6 mt-4 px-8">
         <a
           href="https://www.linkedin.com/in/rafael-canedo-4abaa8197/"
           target="_blank"
@@ -93,7 +93,7 @@ export default function Home() {
         </a>
       </div>
 
-      <div className="flex flex-col gap-2 rounded-lg border-nuv px-8 py-6">
+      <div className="flex flex-col gap-2 rounded-lg border-nuv md:px-8 md:py-6">
         <h3 className="dark:text-primary font-alt text-xl underline decoration-primary">
           About
         </h3>

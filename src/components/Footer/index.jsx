@@ -5,48 +5,39 @@ import {
   GithubLogo,
 } from '@phosphor-icons/react'
 
-export default function Footer() {
+export function Footer() {
   return (
     <div className="flex flex-col mt-8 p-8 justify-center items-center gap-2">
-      <p className="dark:text-subtitle">
+      <p className="text-subtitle">
         &copy; {new Date().getFullYear()} Canedo. All rights reserved
       </p>
 
       <div className="flex flex-row gap-2">
         <a
-          href="https://www.instagram.com/canedodev/"
+          href="https://www.instagram.com/azzurroapp//"
           target="_blank"
           rel="nooperner noreferrer"
-          className="cursor-pointer hover:text-primary dark:text-white dark:hover:text-primary"
+          className="text-subtitle hover:text-primary cursor-pointer"
         >
           <InstagramLogo size={20} />
-        </a>
-
-        <a
-          href="https://www.twitch.tv/canedopriv"
-          target="_blank"
-          rel="nooperner noreferrer"
-          className="cursor-pointer hover:text-primary dark:text-white dark:hover:text-primary"
-        >
-          <TwitchLogo size={20} />
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/rafael-canedo-4abaa8197/"
-          target="_blank"
-          rel="nooperner noreferrer"
-          className="cursor-pointer hover:text-primary dark:text-white dark:hover:text-primary"
-        >
-          <LinkedinLogo size={20} />
         </a>
 
         <a
           href="https://github.com/rafabcanedo"
           target="_blank"
           rel="nooperner noreferrer"
-          className="cursor-pointer hover:text-primary dark:text-white dark:hover:text-primary"
+          className="text-subtitle hover:text-primary cursor-pointer"
         >
           <GithubLogo size={20} />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/rafael-canedo-4abaa8197/"
+          target="_blank"
+          rel="nooperner noreferrer"
+          className="text-subtitle hover:text-primary cursor-pointer"
+        >
+          <LinkedinLogo size={20} />
         </a>
       </div>
     </div>

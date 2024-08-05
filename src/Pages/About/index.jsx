@@ -3,7 +3,8 @@ import Title from '../../components/Design/Title'
 import Lottie from 'lottie-react'
 import animationData from '../../assets/phoneanimation.json'
 import { AiFillCaretRight } from 'react-icons/ai'
-import {
+import { StackPrev } from '../../components/infos/StacksPrev'
+/* import {
   SiTypescript,
   SiJavascript,
   SiJest,
@@ -16,13 +17,16 @@ import {
   SiReact,
   SiRedux,
   SiAngular,
-} from 'react-icons/si'
+} from 'react-icons/si' */
 
 export default function About() {
   const phoneRef = useRef()
   return (
     <>
-      <div id="about" className="min-h-screen flex items-center justify-center">
+      <div
+        id="about"
+        className="min-h-screen bg-dark flex items-center justify-center"
+      >
         <div className="text-center space-y-4">
           {/* <Title title="About Me" /> */}
           <div className="flex flex-col sm:flex-row items-center gap-12">
@@ -37,7 +41,7 @@ export default function About() {
               animationData={animationData}
               style={{ height: 400, width: 400 }}
             />
-            <div className="dark:text-subtitle items-center">
+            <div className="text-subtitle items-center">
               <Title title="About Me" />
               <span className="font-sans text-base">
                 I'm a creative developer. Draw and coding all my projects.
@@ -57,43 +61,23 @@ export default function About() {
               </div>
 
               <div className="grid grid-cols-3 gap-4 mt-6">
-                <div className="flex flex-row items-center">
-                  <AiFillCaretRight size={20} color="#ffc93c" />
-                  <p className="cursor-pointer hover:text-primary">
-                    Javascript
-                  </p>
-                </div>
-
-                <div className="flex flex-row items-center">
-                  <AiFillCaretRight size={20} color="#ffc93c" />
-                  <p className="cursor-pointer hover:text-primary">Typecript</p>
-                </div>
-
-                <div className="flex flex-row items-center">
-                  <AiFillCaretRight size={20} color="#ffc93c" />
-                  <p className="cursor-pointer hover:text-primary">React</p>
-                </div>
-
-                <div className="flex flex-row items-center">
-                  <AiFillCaretRight size={20} color="#ffc93c" />
-                  <p className="cursor-pointer hover:text-primary">NextJs</p>
-                </div>
-
-                <div className="flex flex-row items-center">
-                  <AiFillCaretRight size={20} color="#ffc93c" />
-                  <p className="cursor-pointer hover:text-primary">NodeJs</p>
-                </div>
-
-                <div className="flex flex-row items-center">
-                  <AiFillCaretRight size={20} color="#ffc93c" />
-                  <p className="cursor-pointer hover:text-primary">Prisma</p>
-                </div>
+                <StackPrev icon={AiFillCaretRight} text="Typescript" />
+                <StackPrev icon={AiFillCaretRight} text="Node" />
+                <StackPrev icon={AiFillCaretRight} text="Next" />
+                <StackPrev icon={AiFillCaretRight} text="Nest" />
+                <StackPrev icon={AiFillCaretRight} text="Golang" />
+                <StackPrev icon={AiFillCaretRight} text="Prisma" />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div id="experience" className="w-full h-screen">
+    </>
+  )
+}
+
+/*
+<div id="experience" className="w-full h-screen">
         <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
           <div className="flex flex-col items-center justify-center">
             <Title title="Experience" />
@@ -186,11 +170,4 @@ export default function About() {
           </div>
         </div>
       </div>
-    </>
-  )
-}
-
-/*
- I'm creative developer. Draw, Coding my projects
-          I love that's workflow
 */

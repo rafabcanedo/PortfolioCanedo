@@ -1,13 +1,15 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import { Navbar } from './components/Navbar'
 import Home from './Pages/Home'
-import Footer from './components/Footer'
+import About from './Pages/About'
+import { Footer } from './components/Footer'
 
 function App() {
   return (
     <>
       <Navbar />
       <Home />
+      <About />
       <Footer />
     </>
   )

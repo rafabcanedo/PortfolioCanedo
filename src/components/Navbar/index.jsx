@@ -3,7 +3,7 @@ import Logo from '../Design/Logo'
 
 import { X, List } from '@phosphor-icons/react'
 
-export default function Navbar() {
+export function Navbar() {
   const [open, setOpen] = useState(false)
 
   const closeMenu = () => {

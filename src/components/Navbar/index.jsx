@@ -1,13 +1,10 @@
 import React, { useState } from 'react'
-import { useTheme } from '../../hooks/useTheme'
 import Logo from '../Design/Logo'
 
-import { X, List, Moon, Sun } from '@phosphor-icons/react'
-import { Link } from 'react-router-dom'
+import { X, List } from '@phosphor-icons/react'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
-  const { theme, setTheme } = useTheme()
 
   const closeMenu = () => {
     setOpen(false)
@@ -38,62 +35,40 @@ export default function Navbar() {
               : 'top-[-490px] md:opacity-100 opacity-0'
           }`}
         >
-          <Link to="/">
-            <li
-              className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
-              onClick={closeMenu}
-            >
-              Home
-            </li>
-          </Link>
-          <Link to="/about">
-            <li
-              className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
-              onClick={closeMenu}
-            >
-              About
-            </li>
-          </Link>
-          <Link to="/projects">
-            <li
-              className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
-              onClick={closeMenu}
-            >
-              Projects
-            </li>
-          </Link>
-          <Link to="/blog">
-            <li
-              className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
-              onClick={closeMenu}
-            >
-              Blog
-            </li>
-          </Link>
-          <Link to="/contact">
-            <li
-              className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
-              onClick={closeMenu}
-            >
-              Contact
-            </li>
-          </Link>
+          <li
+            className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+            onClick={closeMenu}
+          >
+            Home
+          </li>
 
-          <div className="flex flex-row items-center gap-2">
-            {theme === 'light' ? (
-              <Moon
-                size={20}
-                className="cursor-pointer"
-                onClick={() => setTheme('dark')}
-              />
-            ) : (
-              <Sun
-                size={20}
-                className="cursor-pointer text-white"
-                onClick={() => setTheme('light')}
-              />
-            )}
-          </div>
+          <li
+            className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+            onClick={closeMenu}
+          >
+            About
+          </li>
+
+          <li
+            className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+            onClick={closeMenu}
+          >
+            Projects
+          </li>
+
+          <li
+            className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+            onClick={closeMenu}
+          >
+            Blog
+          </li>
+
+          <li
+            className="text-base font-inter dark:text-subtitle font-normal hover:underline decoration-primary mr-6 md:ml-8 md:my-0 my-7 cursor-pointer"
+            onClick={closeMenu}
+          >
+            Contact
+          </li>
         </ul>
       </div>
     </div>

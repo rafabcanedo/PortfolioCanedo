@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: 'class',
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'class',
   theme: {
     screens: {
       sm: '480px',
@@ -11,7 +9,7 @@ export default {
       xl: '1440px',
     },
     colors: {
-      white: '#FFFFFF',
+      white: '#f2f2f2',
       black: '#000000',
       // eslint-disable-next-line no-dupe-keys
       white: '#fff',

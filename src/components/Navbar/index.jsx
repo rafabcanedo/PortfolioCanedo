@@ -12,7 +12,7 @@ export function Navbar() {
 
   return (
     <div className="w-full fixed top-0 left-0 z-10 md:px-36">
-      <div className="md:flex items-center justify-between bg-nuv dark:bg-nav py-4 md:px-10 px-7">
+      <div className="md:flex items-center justify-between bg-nuv py-4 md:px-10 px-7 shadow">
         <div>
           <Logo />
         </div>
@@ -29,7 +29,7 @@ export function Navbar() {
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-nuv dark:bg-nav md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-nuv md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
             open
               ? 'top-20 opacity-100'
               : 'top-[-490px] md:opacity-100 opacity-0'

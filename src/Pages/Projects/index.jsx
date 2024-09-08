@@ -1,4 +1,3 @@
-import Title from '../../components/Design/Title'
 import { ProjectsCard } from '../../components/ProjectsCard'
 
 export default function Projects() {

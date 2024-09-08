@@ -1,13 +1,8 @@
-import {
-  InstagramLogo,
-  TwitchLogo,
-  LinkedinLogo,
-  GithubLogo,
-} from '@phosphor-icons/react'
+import { InstagramLogo, LinkedinLogo, GithubLogo } from '@phosphor-icons/react'
 
 export function Footer() {
   return (
-    <div className="flex flex-col mt-8 p-8 justify-center items-center gap-2">
+    <div className="flex flex-col mt-8 p-8 justify-center items-center gap-2 shadow">
       <p className="text-subtitle">
         &copy; {new Date().getFullYear()} Canedo. All rights reserved
       </p>

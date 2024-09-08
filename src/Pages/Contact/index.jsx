@@ -1,16 +1,10 @@
 import Title from '../../components/Design/Title'
-import {
-  InstagramLogo,
-  LinkedinLogo,
-  TwitchLogo,
-  GithubLogo,
-} from '@phosphor-icons/react'
-import { Form } from '../../components/Form'
+import { InstagramLogo, LinkedinLogo, GithubLogo } from '@phosphor-icons/react'
 
 export default function Contact() {
   return (
     <div>
-      <div id="contact" className="w-full h-screen">
+      <div id="contact" className="w-full bg-dark h-screen">
         <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
           <div className="flex flex-col items-center justify-center">
             <Title title="Contact" />
@@ -39,7 +33,7 @@ export default function Contact() {
             <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg cursor-pointer">
               <div>
                 <a
-                  href="https://www.instagram.com/canedodev/"
+                  href="https://www.instagram.com/canedopriv/"
                   className="dark:text-white"
                   target="_blank"
                   rel="noreferrer"
@@ -49,23 +43,7 @@ export default function Contact() {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <span className="text-[#363636] font-medium">Instagram</span>
-                <span className="text-subtitle">@canedodev</span>
-              </div>
-            </div>
-            <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg cursor-pointer">
-              <div>
-                <a
-                  href="https://www.twitch.tv/canedopriv"
-                  className="dark:text-white"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <TwitchLogo size={35} className="w-20 mx-auto" />
-                </a>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <span className="text-[#363636] font-medium">Twitch</span>
-                <span className="text-subtitle">Canedopriv</span>
+                <span className="text-subtitle">@canedopriv</span>
               </div>
             </div>
             <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg cursor-pointer">
@@ -86,17 +64,6 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="min-h-screen flex py-10 md:flex-row flex-col justify-center items-center gap-12">
-        <div className="flex flex-col">
-          <h3 className="font-sans text-3xl dark:text-subtitle">
-            How do you talk to me?
-          </h3>
-          <span className="font-alt text-lg dark:text-subtitle">
-            You can find me in socials medias or write anything in this form
-          </span>
-        </div>
-        <Form />
       </div>
     </div>
   )

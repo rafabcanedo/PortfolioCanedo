@@ -3,7 +3,7 @@ import React from 'react'
 
 const Logo = () => {
   return (
-    <div className="font-cursive font-semibold text-3xl text-black cursor-pointer dark:text-white">
+    <div className="font-cursive font-semibold text-3xl text-black cursor-pointer">
       Canedo.
     </div>
   )

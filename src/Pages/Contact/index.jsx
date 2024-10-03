@@ -1,5 +1,10 @@
 import Title from '../../components/Design/Title'
-import { InstagramLogo, LinkedinLogo, GithubLogo } from '@phosphor-icons/react'
+import {
+  InstagramLogo,
+  LinkedinLogo,
+  GithubLogo,
+  TwitchLogo,
+} from '@phosphor-icons/react'
 
 export default function Contact() {
   return (
@@ -26,7 +31,7 @@ export default function Contact() {
                 </a>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <span className="text-[#363636] font-medium">Linkedin</span>
+                <span className="text-subtitle font-medium">Linkedin</span>
                 <span className="text-subtitle">Rafael Canedo</span>
               </div>
             </div>
@@ -42,7 +47,7 @@ export default function Contact() {
                 </a>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <span className="text-[#363636] font-medium">Instagram</span>
+                <span className="text-subtitle font-medium">Instagram</span>
                 <span className="text-subtitle">@canedopriv</span>
               </div>
             </div>
@@ -58,7 +63,23 @@ export default function Contact() {
                 </a>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <span className="text-[#363636] font-medium">Github</span>
+                <span className="text-subtitle font-medium">Github</span>
+                <span className="text-subtitle">Rafael Canedo</span>
+              </div>
+            </div>
+            <div className="shadow-md hover:scale-105 duration-500 py-2 rounded-lg cursor-pointer">
+              <div>
+                <a
+                  href="https://github.com/rafabcanedo"
+                  className="dark:text-white"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <TwitchLogo size={35} className="w-20 mx-auto" />
+                </a>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <span className="text-subtitle font-medium">Github</span>
                 <span className="text-subtitle">Rafael Canedo</span>
               </div>
             </div>
